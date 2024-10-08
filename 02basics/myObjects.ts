@@ -23,4 +23,6 @@ type User = {
 function createUser2(user: User): User {
   return { name: "", email: "", isActive: true };
 }
+
+createUser2({ name: "", email: "", isActive: true });
 export {};
