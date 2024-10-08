@@ -15,3 +15,10 @@ function createCourse() {
 function createUser2(user) {
     return { name: "", email: "", isActive: true };
 }
+createUser2({ name: "", email: "", isActive: true });
+var myUser = {
+    _id: "1234",
+    name: "h",
+    email: "d@d.com",
+    isActive: true,
+};
