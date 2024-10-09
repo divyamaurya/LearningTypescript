@@ -24,13 +24,13 @@ function getDbId(id: number | string) {
   }
 }
 
-//
+//array
 const data: number[] = [1, 2, 3];
 const data2: string[] = ["1", "2", "3"];
 const data3: (string | number)[] = ["1", 2, "3"];
 
 // literal type
-let seatAllotment: "aisle" | "middle" | "window";
+let seatAllotment: "aisle" | "middle" | "window"; //seatAllotment can be only of three type
 
 seatAllotment = "aisle";
 // seatAllotment = "crew";
