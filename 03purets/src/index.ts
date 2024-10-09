@@ -11,7 +11,8 @@
 // }
 
 class User {
-  private _courseCount = 1;
+  //   private _courseCount = 1;
+  protected _courseCount = 1;
 
   readonly city: string = "Varanasi";
   constructor(
@@ -38,6 +39,13 @@ class User {
       throw new Error("Course count should not be more than 1");
     }
     this._courseCount = courseNum;
+  }
+}
+
+class SubUser extends User {
+  isFamily: boolean = true;
+  changeCourseCount() {
+    this._courseCount = 4; //accessible to same class as well as for inherited class if using protected
   }
 }
 
